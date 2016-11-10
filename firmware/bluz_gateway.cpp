@@ -174,7 +174,7 @@ void bluz_gateway::spi_data_process(uint8_t *buffer, uint16_t length, uint8_t cl
                         debugPrint("Event callback done");
                     }
                     break;
-                case 0xb1:
+                case 0x00:
                     //all bluz ID's start with b1, so this must be
                     char id[25];
                     parseID(id, buffer+1);
